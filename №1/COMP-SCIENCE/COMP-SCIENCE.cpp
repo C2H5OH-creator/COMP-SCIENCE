@@ -88,7 +88,6 @@ void BitSwaper(DOUBLE& number, unsigned bitAmmount, unsigned index) {
 }
 
 int main() {
-	//DOUBLE number;
 	int keyInput;
 	unsigned bitAmmount = 1, index = 1;
 	bool dataType = 0; // unsigned char = 0, double = 1
@@ -97,8 +96,9 @@ int main() {
 	unsigned char unsignedChar = 0;
 
 	do {
+		std::cout << "Нажмите любую клавишу: ";
 		keyInput = _getch();
-		std::cout << "Выберите тип данных (unsigned char - 0, double - 1) : ";
+		std::cout << "\nВыберите тип данных (unsigned char - 0, double - 1) : ";
 		std::cin >> dataType;
 		while (dataType != 1 && dataType != 0 || std::cin.fail()) {
 			std::cout << "Введите корректное число. Либо 1, либо 0: ";
@@ -125,7 +125,7 @@ int main() {
 			std::cin >> number.m_double;
 			PrintBinaryDouble(number);
 		}
-		std::cout << "Введите номер старшего разряда: ";
+		std::cout << "Введите номер младшего разряда: ";
 		std::cin >> index;
 		if (!dataType) {
 			while (index >= 8|| index < 0 || std::cin.fail()) {
@@ -146,12 +146,22 @@ int main() {
 		std::cout << "Введите количество бит: ";
 		std::cin >> bitAmmount;
 		if (!dataType) {
-			if (bitAmmount + index > 8) bitAmmount = 8 - index;
+			while (bitAmmount >= 7 || bitAmmount <= 0 || std::cin.fail()) {
+				std::cout << "Введите корректное количество бит в диапазоне [0;7]: ";
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cin >> bitAmmount;
+			}
 			PrintBinaryChar(BitSwaper(unsignedChar, bitAmmount, index));
 			std::cout<< "Число после преобразований: " << static_cast<int>(unsignedChar) << std::endl;
 		}
 		else {
-			if (bitAmmount + index > 64) bitAmmount = 64 - index;
+			while (bitAmmount >= 63 || bitAmmount <= 0 || std::cin.fail()) {
+				std::cout << "Введите корректное количество бит в диапазоне [0;63]: ";
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cin >> bitAmmount;
+			}
 			BitSwaper(number, bitAmmount, index);
 			PrintBinaryDouble(number);
 		}

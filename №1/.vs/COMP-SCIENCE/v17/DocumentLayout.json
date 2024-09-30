@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\COMP-SCIENCE\\\u21161\\",
+  "WorkspaceRootPath": "C:\\COMP_SIENCE\\COMP-SCIENCE\\\u21161\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{490B83B8-E516-4162-80A1-C7AFAE3A49E8}|COMP-SCIENCE\\COMP-SCIENCE.vcxproj|C:\\Users\\Admin\\source\\repos\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{490B83B8-E516-4162-80A1-C7AFAE3A49E8}|COMP-SCIENCE\\COMP-SCIENCE.vcxproj|C:\\COMP_SIENCE\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{490B83B8-E516-4162-80A1-C7AFAE3A49E8}|COMP-SCIENCE\\COMP-SCIENCE.vcxproj|solutionrelative:COMP-SCIENCE\\COMP-SCIENCE.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,21 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "COMP-SCIENCE.cpp",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp",
+              "DocumentMoniker": "C:\\COMP_SIENCE\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp",
               "RelativeDocumentMoniker": "COMP-SCIENCE\\COMP-SCIENCE.cpp",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp",
+              "ToolTip": "C:\\COMP_SIENCE\\COMP-SCIENCE\\\u21161\\COMP-SCIENCE\\COMP-SCIENCE.cpp",
               "RelativeToolTip": "COMP-SCIENCE\\COMP-SCIENCE.cpp",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH8AAAAyAAAAAAAAAA==",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAH4AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-23T18:18:00.833Z",
               "EditorCaption": ""
